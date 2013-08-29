@@ -1,0 +1,244 @@
+/* Compiled CSS for elevel website */
+/* General Styles */
+/* line 47, ../sass/layout.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 52, ../sass/layout.scss */
+body {
+  background-color: #edece9;
+}
+
+/* line 56, ../sass/layout.scss */
+h1, h2, h3, h4 {
+  font-family: arial, helvetica, sans-serif;
+}
+
+/* line 60, ../sass/layout.scss */
+h1 {
+  padding-top: 15px;
+  margin: auto;
+}
+
+/* line 67, ../sass/layout.scss */
+h2 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+/* line 74, ../sass/layout.scss */
+h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+}
+
+/* line 81, ../sass/layout.scss */
+h4 {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #ec1e26;
+}
+
+/* line 87, ../sass/layout.scss */
+a {
+  text-decoration: none;
+  color: #ec1e26;
+}
+
+/* line 92, ../sass/layout.scss */
+div.sixteen.columns.top {
+  width: 960px;
+  margin: auto;
+}
+
+/* line 98, ../sass/layout.scss */
+.band.navigation {
+  background-color: white;
+  border-bottom: 1px solid;
+  border-color: #CCCCCC;
+  height: 78px;
+}
+
+/* line 107, ../sass/layout.scss */
+nav {
+  padding-left: 100px;
+}
+/* line 111, ../sass/layout.scss */
+nav ul a {
+  width: 100%;
+  text-align: right;
+}
+/* line 115, ../sass/layout.scss */
+nav ul li a {
+  text-decoration: none;
+  color: #8e8e8e;
+}
+
+/* line 121, ../sass/layout.scss */
+ul.menu {
+  padding-top: 25px;
+  float: right;
+}
+/* line 126, ../sass/layout.scss */
+ul.menu li {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: inline;
+  float: left;
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+/* line 136, ../sass/layout.scss */
+ul.menu li a {
+  text-decoration: none;
+  color: #8e8e8e;
+}
+/* line 139, ../sass/layout.scss */
+ul.menu li a:hover {
+  color: #ec1e26;
+}
+
+/* line 149, ../sass/layout.scss */
+#menu-primary-navigation li.current-menu-item a {
+  color: #ec1e26;
+}
+
+/* line 157, ../sass/layout.scss */
+.subnav ul {
+  padding-top: 10px;
+}
+/* line 161, ../sass/layout.scss */
+.subnav ul li {
+  font-size: 12px;
+}
+
+/* line 171, ../sass/layout.scss */
+ul li.current-menu-item a:visited {
+  color: #ec1e26;
+}
+
+/* line 179, ../sass/layout.scss */
+label.assistive-text {
+  display: none;
+}
+
+/* line 185, ../sass/layout.scss */
+.row.portfolio {
+  padding-left: 15px;
+  margin: auto;
+}
+
+/* line 193, ../sass/layout.scss */
+img.wp-post-image {
+  margin-bottom: 0px;
+}
+
+/* line 201, ../sass/layout.scss */
+div.entry-featured-image {
+  height: 240px;
+}
+
+/* line 206, ../sass/layout.scss */
+.col {
+  float: left;
+  overflow: hidden;
+}
+
+/* line 211, ../sass/layout.scss */
+.box {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+/* line 216, ../sass/layout.scss */
+.box:hover figcaption {
+  transform: translate(0, -40px);
+  -webkit-transform: translate(0, -40px);
+  -o-transform: translate(0, -40px);
+  -moz-transform: translate(0, -40px);
+  opacity: 1;
+  left: 0;
+}
+/* line 222, ../sass/layout.scss */
+.box a {
+  margin-bottom: 0px;
+}
+/* line 228, ../sass/layout.scss */
+.box img.wp-post-image {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  /** Chrome & Safari **/
+  -moz-transition: all 0.3s ease-in-out;
+  /** Firefox **/
+  -o-transition: all 0.3s ease-in-out;
+  /** Opera **/
+}
+
+/* line 234, ../sass/layout.scss */
+figcaption {
+  position: absolute;
+  background: white;
+  color: black;
+  width: 240px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  /** Chrome & Safari **/
+  -moz-transition: all 0.3s ease-in-out;
+  /** Firefox **/
+  -o-transition: all 0.3s ease-in-out;
+  /** Opera **/
+  opacity: 0;
+  bottom: -40px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* line 253, ../sass/layout.scss */
+.entry-featured-image a img.wp-post-image:hover {
+  transform: translate(0, -40px);
+  -webkit-transform: translate(0, -40px);
+  -o-transform: translate(0, -40px);
+  -moz-transform: translate(0, -40px);
+}
+
+/* line 263, ../sass/layout.scss */
+h3.search:first-child {
+  padding-top: 10px;
+}
+
+/* line 274, ../sass/layout.scss */
+.video.row a {
+  display: inline-block;
+  color: #ec1e26;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* line 288, ../sass/layout.scss */
+.back {
+  padding-top: 10px;
+}
+
+/* line 294, ../sass/layout.scss */
+.back-to-videos {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* line 301, ../sass/layout.scss */
+.related {
+  display: inline;
+}
+
+.test {
+  display: none;
+}

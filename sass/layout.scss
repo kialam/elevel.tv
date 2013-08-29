@@ -1,0 +1,303 @@
+/* Compiled CSS for elevel website */
+//created by Zoidberg 2013 v1.0
+//output file is layout.css
+
+// layout
+$grid: 960px;
+$square: 240px;
+
+// colorz
+$link_color: #ec1e26; //red
+$bg_color: #edece9; //grey
+$nav_color: #8e8e8e; //dark grey
+$white: #FFF;
+$black: #000;
+
+// fontz
+$site_font: arial, helvetica, sans-serif;
+$wide_spacing: .2em;
+$nav_spacing: .1em;
+$cap: uppercase;
+
+// hover over effects
+$shift_up: (0,-40px);
+@mixin hover-over {
+	transform: translate($shift_up);
+    -webkit-transform: translate($shift_up);
+    -o-transform: translate($shift_up);
+    -moz-transform: translate($shift_up);
+
+}
+
+$ease-in: all 0.3s ease-in-out;
+@mixin hover-animate {
+	transition: $ease-in;
+	-webkit-transition: $ease-in; /** Chrome & Safari **/
+    -moz-transition: $ease-in; /** Firefox **/
+    -o-transition: $ease-in; /** Opera **/
+}
+
+@mixin reset {
+ margin: 0;  
+ padding: 0;  
+}
+
+/* General Styles */
+
+* {
+@include reset;
+}
+
+
+body {
+	background-color: $bg_color;
+}
+
+h1, h2, h3, h4 {
+	font-family: $site_font;
+}
+
+h1 {
+	padding: {
+		top: 15px;
+	}
+	margin: auto;
+}
+
+h2 {
+	padding: {
+		top: 35px;
+		bottom: 35px;
+	}
+}
+
+h3 {
+	text-transform: $cap;
+	font-size: 15px;
+	line-height: 15px;
+	letter-spacing: $wide_spacing;
+}
+
+h4 {
+	text-transform: $cap;
+	font-size: 12px;
+	color: $link_color;
+}
+
+a {
+	text-decoration: none;
+	color: $link_color;
+}
+
+div.sixteen.columns.top {
+	width: $grid;
+	margin: auto;
+}
+
+// navigation stylez
+.band.navigation {
+	background-color: $white;
+	border: {
+		bottom: 1px solid;
+		color: #CCCCCC;
+	}
+	height: 78px;
+}
+
+nav {
+	padding: {
+		left: 100px;
+	}
+	ul a {
+		width: 100%;
+		text-align: right;
+	}
+	ul li a {
+		text-decoration: none;
+		color: $nav_color;
+	}
+}
+
+ul.menu {
+	padding: {
+		top: 25px;
+	}
+	float: right;
+	li {
+		text-transform: $cap;
+		letter-spacing: $nav_spacing;
+		display: inline;
+		float: left;
+		margin: {
+			top: 5px;
+			right: 10px;
+			bottom: 10px;
+		}
+		a {
+			text-decoration: none;
+			color: $nav_color;
+			&:hover {
+				color: $link_color;
+			}
+		}
+	}
+}
+
+// Current Menu Selectors
+#menu-primary-navigation {
+	li.current-menu-item {
+		a {
+		color: $link_color;
+		}
+	}
+}
+
+// subnav stylez
+.subnav {
+	ul {
+		padding: {
+			top: 10px;
+		}
+		li {
+			font-size: 12px;
+			
+			
+			}
+		}
+}
+
+ul {
+	li.current-menu-item {
+		a:visited {
+			color: $link_color;
+		}
+	}
+}
+
+// Searchbar Styling
+label {
+	&.assistive-text {
+		display: none;
+	}
+}
+
+// Our Work Page Styling
+.row.portfolio {
+	padding: {
+		left: 15px;
+	}
+	margin: auto;
+}
+
+img {
+	&.wp-post-image {
+		margin: {
+			bottom: 0px;
+		}
+	}
+}
+
+div {
+	&.entry-featured-image {
+		height: 240px;
+	}
+}
+
+.col {
+	float: left;
+	overflow: hidden;
+}
+
+.box {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	&:hover {
+		figcaption {
+			@include hover-over;
+			opacity: 1;
+			left: 0;
+		}
+	}
+	a {
+	margin: {
+		bottom: 0px;
+		}
+	}
+	img {
+		&.wp-post-image {
+			@include hover-animate;
+		}
+	}
+}
+
+figcaption {
+	position: absolute;
+	background: rgba(255,255,255, 1.0);
+	color: $black;
+	width: 240px;
+	@include hover-animate;
+	opacity: 0;
+	bottom: -40px;
+	padding: {
+		top: 10px;
+		right: 10px;
+		bottom: 10px;
+		left: 10px;
+	}
+}
+
+.entry-featured-image {
+	a {
+		img {
+			&.wp-post-image:hover {
+				@include hover-over;
+			}
+		}
+	}
+}
+
+// Search Results Page Styling
+h3 {
+	&.search {
+		&:first-child {
+			padding: {
+				top: 10px;
+			}
+		}
+	}
+}
+
+// Individual Posts/Video Styling
+.video {
+	&.row {
+		a {
+			display: inline-block;
+			color: $link_color;
+			padding: {
+				top: 10px;
+				right: 0px;
+				bottom: 10px;
+				left: 10px;
+			}
+		}
+	}
+}
+
+// Work Single Page Styling
+.back {
+	padding: {
+		top: 10px;
+	}
+}
+
+.back-to-videos {
+	text-transform: $cap;
+	font: {
+		size: 12px;
+	}
+}
+
+.related {
+	display: inline;
+}
