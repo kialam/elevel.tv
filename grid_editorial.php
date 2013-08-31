@@ -66,7 +66,7 @@ wp_reset_query(); ?>
 <h3>Mahoko Kuramasu</h3>
 
 <?php
-//Query Two
+//Query Three
 $args=array(
    'cat'=>29,
    'posts_per_page' => 12,
@@ -82,7 +82,7 @@ wp_reset_query(); ?>
 <h3>Graham Willcox</h3>
 
 <?php
-//Query Two
+//Query Four
 $args=array(
    'cat'=>40,
    'posts_per_page' => 12,

@@ -18,7 +18,6 @@ remote_theme_dir_absolute = '/70.32.99.159:21//httpdocs/wp-content/themes/elevel
 # SFTP Connection Details
 sftp_host = '70.32.99.159'
 sftp_user = 'eadmin'
-sftp_pass = 'GSP720reelz!'
 
 # Callback to be used when a file change is written. This will upload to a remote WP install
 on_stylesheet_saved do |filename|
